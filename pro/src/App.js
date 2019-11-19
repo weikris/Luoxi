@@ -3,14 +3,16 @@ import {BrowserRouter as Router,Route,NavLink,Redirect} from 'react-router-dom';
 import Async from './Async';
 import './App.css';
 const Home=Async(()=>import('./views/Home'))
+const Index=Async(()=>import('./views/Index'))
 function App() {
   return (
     <div >
-      <h2>罗尼西</h2>
 	  <Router>
 	  	<div>
-	  		<NavLink to="/home">首页</NavLink>
-	  			<Route path="/home" component={Home}></Route>>
+	  		{/*<NavLink to="/home">首页</NavLink>
+	  			<Route path="/home" component={Home}></Route>*/}
+			<Route path="/index" component={Index}></Route>
+			<Redirect to="/index"/>
 	  	</div>
 	  	
 	  </Router>
