@@ -1,0 +1,91 @@
+input{
+	outline: none;
+}
+span{
+	color:#333333;
+}
+.head{
+	width:1190px;
+	margin: 0 auto;
+	height:100px;
+	line-height: 100px;
+}
+.head>img{
+	width:200px;
+	height:64px;
+}
+.hright{
+	float:right;
+	line-height: 100px;
+}
+.icon{
+	font-size:30px;
+}
+.hright span{
+	color:#333333;
+	font-size:12px;
+}
+.sp1{
+	margin-right: 15px;
+}
+.sp1:hover{
+	color:orangered;
+}
+.input{
+	margin-bottom: 10px;
+}
+
+/* banner */
+
+.banner{
+	width:1190px;
+	margin: 60px auto;
+	height:500px;
+}
+.left{
+	width:600px;
+	border-right: solid 1px #9A9A9A;
+	float:left;
+}
+.banner>h1{
+	width:600px;
+	text-align: center;
+}
+.left>h1{
+	text-align: center;
+	padding: 15px 0;
+}
+.left1{
+	display: inline-block;
+	width:80px;
+	text-align: right;
+	margin-right: 5px;
+	font-size:16px;
+}
+.xie{
+	margin:20px 0px 20px 80px;
+}
+.xie button{
+	margin-left: 80px;
+	background:#0085A1;
+	width:100px;
+	height:40px;
+}
+.right{
+	float:left;
+}
+.right>div{
+	margin-left:40px;
+}
+.right button{
+	width:150px;
+	height:40px;
+	border:0;
+	background:#CC0001;
+	color:#FFFFFF;
+	margin-left: 10px;
+}
+
+.btn{
+	cursor: pointer;
+}

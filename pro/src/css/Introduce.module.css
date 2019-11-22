@@ -1,0 +1,9 @@
+.content {
+    left: 50%;
+    position: relative;
+    width: 1920px;
+    margin-left: -960px;
+}
+img {
+    vertical-align: middle;
+}

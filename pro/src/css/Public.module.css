@@ -11,12 +11,18 @@ body{
     font: 12px/1.5 "Microsoft YaHei",Arial,Helvetica,sans-serif,sans-serif;
     color: #555;
 }
+.big{
+	width:100%;
+	height: 100%;
+	box-shadow: 0px 10px 10px gainsboro;
+}
 /* 顶部 */
 .wrap{
     width:100%;
     height:36px;
     background: #333333;
     line-height: 36px;
+	
 }
 .hwrap{
     width:1190px;
@@ -26,6 +32,7 @@ body{
     line-height: 36px;
     font-size: 12px;
     color: #999;
+	
 }
 /* 顶部左 */
 .username_login{
@@ -53,15 +60,19 @@ body{
 }
 
 .toup{
-    display: none; 
+    display:none; 
     position: absolute; 
-    left: 50%; margin-top: 5px;
+    left: 88%; margin-top: 5px;
     width: 120px;
     background: rgb(255, 255, 255);
     z-index: 130; text-align: center; 
     padding: 10px; border-radius: 10px; 
     color: rgb(0, 70, 142); 
     border: 1px solid; font-size: 12px; margin-left: -60px;
+}
+.toup:hover{
+    display:block; 
+
 }
 
 .guan{
@@ -71,6 +82,23 @@ body{
     border-left: 1px solid #999;
     color: #999;
 }
+.guan:hover .toup{
+    cursor: pointer;
+	display: block;
+}
+.guan span{
+	color:#999;
+}
+/* .guan:hover::after{
+  width : 120px;
+  height: 120px;
+  border: 5px solid white;
+  background-image: url(http://mall.rossini.com.cn/themes/qfshuhua/images/icon/gzh-icon.jpg) top center;
+  background-size:100% auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+} */
 .fang{
     float: rigth;
     padding: 0;
@@ -141,42 +169,7 @@ body{
     padding-left: 37px;
     padding-right: 19px;
 }
-/* 轮播 */
-.ant-carousel .slick-slide {
-    text-align: center;
-    height: 160px;
-    line-height: 160px;
-    background: #364d79;
-    overflow: hidden;
-  }
-  
-  .ant-carousel .slick-slide h3 {
-    color: #fff;
-  }
-.lun{
-    width: 100%;
-    height: 800px;
-}
-.lun div{
-    width: 1920px;
-    height: 800px;
-    margin-left: -10px;
-}
-.lun img{
-    width: 1920px;
-    height: 700px;
-    /* vertical-align: middle;  */
-}
 
-/* 热销 */
-.clip_content{
-    width: 1920px;
-    height: 770px;
-    margin-left: -210px;
-}
-a {
-    color: #555;
-}
 /* 底部 */
 .footer {
     margin-top: -120px;
@@ -274,6 +267,7 @@ p {
     font-size: 14px;
     color: rgba(255, 255, 255, .4);
 }
+
 /* 底层 */
 .foot_zd{
     color: rgba(255, 255, 255, .4);
@@ -294,3 +288,50 @@ p {
     font-size: 16px;
     margin-bottom: 15px;
 } 
+
+/* 客服 */
+.ke{
+    position: fixed;
+    top:76%; left: 90.5%;
+    right: 30px;
+    width: 45px;
+    height: 65px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.ke i{
+    text-align: center;
+}
+.ke >img{
+    width: 35px;
+    height: 35px;
+}
+.ke:hover .fu{
+    cursor: pointer;
+    display: block;
+}
+.fu{
+    display:none; 
+    position: absolute; 
+    right: 50px; top: -50px;
+    width: 120px;
+    background: rgb(255, 255, 255);
+    z-index: 130; text-align: center; 
+    padding: 10px; border-radius: 10px; 
+    color: rgb(0, 70, 142); 
+    border: 1px solid; font-size: 12px; margin-left: -60px;
+}
+/* 返回顶部 */
+.ding{
+    position: fixed;
+    top:87%;left: 90.5%;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 5px; 
+}
+.ding img{
+    width: 35px;
+    height: 35px;
+}
